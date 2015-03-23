@@ -400,7 +400,7 @@ Age:<br >
 	     		alert('data saved');
 	    		
 	    		$.ajax({
-	    			url: 'function_exs.php',
+	    			url: 'https://sitarahussain.com/lifeSupporter_v3/function_exs.php',
 	    			type: 'POST',
 	    			dataType: 'json',
 	    			data: {daliy_reminder2:daliy_reminder2},
