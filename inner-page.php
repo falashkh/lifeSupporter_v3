@@ -36,7 +36,7 @@ session_start();
 <script>
 setInterval(function(){ 
 
-$.ajax({url:'www.sitarahussain.com/lifeSupporter_v3/getSession.php',
+$.ajax({url:'http://www.sitarahussain.com/lifeSupporter_v3/getSession.php',
 	        type: 'Get',
 			data: "update=",
 	        success: function(result){
@@ -535,7 +535,7 @@ $("#form1").on('submit',(function(e) {
 	//e.preventDefault();
 	//if(validate_form1()){
 		$.ajax({
-			url: 'www.sitarahussain.com/lifeSupporter_v3/Doc_func.php', // Url to which the request is send
+			url: 'http://www.sitarahussain.com/lifeSupporter_v3/Doc_func.php', // Url to which the request is send
 			type: "POST",             // Type of request to be send, called as method
 			data: new FormData(this), // Data sent to server, a set of key/value pairs (i.e. form fields and values)
 			contentType: false,       // The content type used when sending data to the server.
@@ -665,7 +665,7 @@ function validate_form2()
 	{
 		document.form2.submit();
 		$.ajax({
- 			url: 'www.sitarahussain.com/lifeSupporter_v3/Medicine_fun.php',
+ 			url: 'http://www.sitarahussain.com/lifeSupporter_v3/Medicine_Fun.php,
  			type: 'POST',
  			dataType: 'json',
  			data: {form2_name:form2_name , form2_disease: form2_disease, click_stock: click_stock, pills: pills, remind: remind, dossage: dossage, optionsRadios: optionsRadios, daily_reminder:daily_reminder

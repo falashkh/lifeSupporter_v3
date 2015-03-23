@@ -26,7 +26,7 @@ window.setInterval(function() {
     if (nmin <= 9) nmin = "0" + nmin;
     var time = "" + nhour + ":" + nmin + ap + "";
     $.ajax({
-        url: 'www.sitarahussain.com/lifeSupporter_v3/check_med.php',
+        url: 'http://www.sitarahussain.com/lifeSupporter_v3/check_med.php',
         type: 'POST',
         data: {
             'weekday': n,
@@ -51,13 +51,13 @@ window.setInterval(function() {
     "Take Pills" : function ()
     {
 		
-	$.ajax({url: 'www.sitarahussain.com/lifeSupporter_v3/take.php',
+	$.ajax({url: 'http://www.sitarahussain.com/lifeSupporter_v3/take.php',
 	type: 'Get',
 			data: "update="+ab2,
 	success: function(result){
         $("#div").html(result);
 			
-			$.ajax({url: 'www.sitarahussain.com/lifeSupporter_v3/takeFinish.php',
+			$.ajax({url: 'http://www.sitarahussain.com/lifeSupporter_v3/takeFinish.php',
 	        type: 'Get',
 			data: "update="+ab2,
 	        success: function(result){
