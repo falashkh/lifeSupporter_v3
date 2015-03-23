@@ -1,5 +1,5 @@
 <?php
-header("Cotent-Type:application/json");
+
 if (isset ( $_REQUEST ['form2_name'] )) {
 	
 	//$data = array();

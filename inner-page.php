@@ -244,7 +244,7 @@ var sound = new Howl({
 						</thead>
 				
 				<?php
-				header("Cotent-Type:application/json");
+			
 				$cn = mysql_connect ( 'localhost', 'sitarahussain', 'database123' ) or die ( mysql_error () );
 				mysql_select_db ( 'lifesupporter', $cn ) or die ( mysql_error () );
 				
@@ -429,7 +429,7 @@ var sound = new Howl({
 						</thead>
 				
 				<?php
-				header("Cotent-Type:application/json");
+				
 				$cn = mysql_connect ( 'localhost', 'sitarahussain', 'database123' ) or die ( mysql_error () );
 				mysql_select_db ( 'lifesupporter', $cn ) or die ( mysql_error () );
 				
@@ -539,7 +539,7 @@ $("#form1").on('submit',(function(e) {
 	//if(validate_form1()){
 		$.ajax({
 			crossDomain: true,
-			url: 'http://www.sitarahussain.com/lifeSupporter_v3/lifesupporter/Doc_func.php', // Url to which the request is send
+			url: 'http://www.sitarahussain.com/lifeSupporter_v3/Doc_func.php', // Url to which the request is send
 			type: "POST",          
 			// Type of request to be send, called as method
 			data: new FormData(this), // Data sent to server, a set of key/value pairs (i.e. form fields and values)
@@ -671,7 +671,7 @@ function validate_form2()
 		document.form2.submit();
 		$.ajax({
 			crossDomain: true,
- 			url: 'http://www.sitarahussain.com/lifeSupporter_v3/lifesupporter/Medicine_Fun.php,
+ 			url: 'http://www.sitarahussain.com/lifeSupporter_v3/Medicine_Fun.php',
  			type: 'POST',
  			dataType: 'json',
  			data: {form2_name:form2_name , form2_disease: form2_disease, click_stock: click_stock, pills: pills, remind: remind, dossage: dossage, optionsRadios: optionsRadios, daily_reminder:daily_reminder
